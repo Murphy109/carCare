@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/appointment.css"/>
+	</head>
+	<body onload="testF()">
+		<div class="top">
+		</div>
+		<section class="banner">
+			<img src="img/banner1.jpg" alt="" />
+		</section>
+		<section class="title">
+			<div class="cont margin">
+				<div class="left">
+				</div>
+				<div class="center">
+					<span>在线预约</span><i>Online Appointment</i>
+				</div>
+				<div class="right">
+				</div>
+			</div>
+		</section>
+		<section class="form margin">
+			<form action="">
+				<p>
+					<span>预约服务：</span>
+					<select name="sel">
+						<option value="">汽车美容</option>
+						<option value="">汽车维修</option>
+						<option value="">钣金喷漆</option>
+					</select>
+				</p>
+				<p><span>预约日期：</span><input type="date" name="" id="date" value="" /><span class="s" id="cdate" style="color:#f00;"> </span></p>
+				<p><span>您的姓名：</span><input type="text" id="name" placeholder=""/><span class="s" id="cname" style="color:#f00;"> <span></p>
+				<p><span>您的性别：</span><input type="radio" name="sex" checked="checked"/>男<input type="radio" name="sex"/>女<span class="s" id="psw2t"> </span></p>
+				<p><span>您的电话：</span><input type="tel" id="tel" /><span class="s" id="ctel" style="color:#f00;"> </span></p>
+				<p><span>补充说明：</span><textarea name="" rows="" cols=""></textarea><span class="s" id="psw2t"> </span></p>
+				<p><span>验证码：&nbsp;</span><input type="text" name="" id="checkCode" value="" /><span id="check"  style="display: inline-block; font:12px/30px ''; color:#f00;"></span></p>
+				<span id="showCode" ></span><u onclick="testF()" style="font-size:12px;cursor:pointer;">换一张？</u><br />
+				<p><input id="btn" type="button" value="提交预约" /></p>
+			</form>
+		</section>
+		
+		
+		
+		<div class="bottom">
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+var str1="";
+function testF(){
+	var i=0;
+	var str="";
+	while(i<4){
+		var num1=parseInt(Math.random()*123);
+		if((num1>48 && num1<=57)||(num1>=65 && num1<=90)||(num1>=97 && num1<=122)){
+			str+= "<img src='img/"+num1+".jpg'/>";
+			str1+=String.fromCharCode(num1);
+			i++;
+		}
+	}
+	document.getElementById("showCode").innerHTML=str;
+}
+	var ord=0;
+	mobile  = /^13[0-9]{1}[0-9]{8}$|15[0-9]{1}[0-9]{8}$|18[0-9]{1}[0-9]{8}$|17[0-9]{1}[0-9]{8}$/;
+	document.getElementById("date").onblur=function () {
+		if(document.getElementById("date").value==""){
+			document.getElementById("cdate").innerHTML="请选择日期";
+		}else{
+			ord++;
+			document.getElementById("cdate").innerHTML=""
+		}
+	}
+	document.getElementById("tel").onblur=function () {
+		if(!mobile.test(document.getElementById("tel").value)){
+			document.getElementById("ctel").innerHTML="手机号输入有误";
+		}else{
+			ord++;
+			document.getElementById("ctel").innerHTML=""
+		}
+	}
+	document.getElementById("name").onblur=function () {
+		if(document.getElementById("name").value==""){
+			document.getElementById("cname").innerHTML="请输入姓名";
+		}else{
+			ord++;
+			document.getElementById("cname").innerHTML=""
+		}
+	}
+	document.getElementById("checkCode").onblur=function () {
+		var  checkCode=document.getElementById("checkCode").value;
+		checkCode=checkCode.toLowerCase();
+		str1=str1.toLowerCase();
+		if(checkCode==""){
+			document.getElementById("check").innerHTML="请输入验证码";
+		}else{
+			document.getElementById("check").innerHTML="";
+			if(checkCode==str1){
+				ord++;
+				str1="";
+			}else{
+				document.getElementById("check").innerHTML="验证码错误";
+				document.getElementById("checkCode").value="";
+				str1="";
+				testF();
+			}
+		}
+		
+	}
+	document.getElementById("btn").onclick=function () {
+		if(ord==4){
+			alert("您已成功预约！")
+			ord=0;
+		}
+	
+	}
+	
+
+</script>
+<script type="text/javascript" src="js/require.js"  data-main="js/products"></script>

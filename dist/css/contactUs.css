@@ -1,0 +1,108 @@
+.margin {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box; }
+
+.banner {
+  display: flex;
+  justify-content: center;
+  max-height: 341px;
+  height: 341px; }
+  .banner img {
+    justify-content: center;
+    width: 100%; }
+
+.title .cont {
+  display: flex;
+  margin-top: 70px;
+  align-items: center; }
+  .title .cont .left {
+    border-bottom: 1px solid #666;
+    width: 33%; }
+  .title .cont .center {
+    text-align: center;
+    width: 33%; }
+    .title .cont .center span {
+      font: 700 40px/60px "";
+      color: #f00; }
+    .title .cont .center i {
+      font: 700 12px "";
+      color: #999;
+      letter-spacing: 3px; }
+  .title .cont .right {
+    border-bottom: 1px solid #666;
+    width: 33%; }
+
+.company {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%; }
+  .company .left {
+    width: 70%; }
+    .company .left #dituContent {
+      width: 100%;
+      height: 300px; }
+  .company .right {
+    margin-top: 20px; }
+    .company .right h3 {
+      font: 700 14px/25px "";
+      color: #000; }
+    .company .right p {
+      font: 14px/25px "";
+      color: #000; }
+
+@media screen and (max-width: 1200px) {
+  .margin {
+    width: 970px; } }
+
+@media screen and (max-width: 991px) {
+  .title .cont {
+    margin: 70px auto 0;
+    display: block; }
+    .title .cont .left {
+      border-bottom: 1px solid #666;
+      width: 100%; }
+    .title .cont .center {
+      text-align: center;
+      width: 100%; }
+      .title .cont .center span {
+        font: 700 40px/60px "";
+        color: #f00; }
+      .title .cont .center i {
+        font: 700 12px "";
+        color: #999;
+        letter-spacing: 3px; }
+    .title .cont .right {
+      border-bottom: 1px solid #666;
+      width: 100%; }
+  .company {
+    display: block; }
+    .company .left {
+      width: 60%;
+      margin: auto; }
+      .company .left #dituContent {
+        width: 100%;
+        height: 280px; }
+    .company .right {
+      padding: 0 25px; } }
+
+@media screen and (max-width: 767px) {
+  .company .left {
+    width: 50%;
+    margin: auto; }
+    .company .left #dituContent {
+      width: 100%;
+      height: 280px; }
+  .main_content ul li {
+    justify-content: center; }
+    .main_content ul li dl span {
+      width: 300px;
+      padding: 50x 0; } }
+
+@media screen and (max-width: 750px) {
+  .margin {
+    width: auto; } }

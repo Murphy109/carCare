@@ -1,0 +1,111 @@
+.margin {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box; }
+
+.banner {
+  display: flex;
+  justify-content: center;
+  max-height: 341px;
+  height: 341px; }
+  .banner img {
+    justify-content: center;
+    width: 100%; }
+
+.title .cont {
+  display: flex;
+  margin-top: 70px;
+  align-items: center; }
+  .title .cont .left {
+    border-bottom: 1px solid #666;
+    width: 33%; }
+  .title .cont .center {
+    text-align: center;
+    width: 33%; }
+    .title .cont .center span {
+      font: 700 40px/60px "";
+      color: #f00; }
+    .title .cont .center i {
+      font: 700 12px "";
+      color: #999;
+      letter-spacing: 3px; }
+  .title .cont .right {
+    border-bottom: 1px solid #666;
+    width: 33%; }
+
+.content {
+  margin: 20px 0; }
+  .content .new {
+    width: 100%;
+    margin: auto; }
+    .content .new p {
+      transition: 1s;
+      display: flex;
+      padding: 0 20px;
+      justify-content: space-between;
+      font: 16px/30px "";
+      color: #666;
+      border-bottom: 1px dotted #666; }
+      .content .new p a {
+        transition: 1s; }
+      .content .new p i {
+        transition: 1s; }
+      .content .new p:hover a {
+        color: #f00; }
+      .content .new p:hover i {
+        color: #f00; }
+  .content img {
+    width: 100%;
+    margin: 20px auto; }
+
+@media screen and (max-width: 1200px) {
+  .margin {
+    width: 970px; } }
+
+@media screen and (max-width: 991px) {
+  .title .cont {
+    margin: 70px auto 0;
+    display: block; }
+    .title .cont .left {
+      border-bottom: 1px solid #666;
+      width: 100%; }
+    .title .cont .center {
+      text-align: center;
+      width: 100%; }
+      .title .cont .center span {
+        font: 700 40px/60px "";
+        color: #f00; }
+      .title .cont .center i {
+        font: 700 12px "";
+        color: #999;
+        letter-spacing: 3px; }
+    .title .cont .right {
+      border-bottom: 1px solid #666;
+      width: 100%; }
+  .content .new {
+    width: 100%;
+    margin: auto; }
+    .content .new p {
+      padding: 15px 0;
+      font: 12px/30px "";
+      color: #666;
+      border-bottom: 1px dotted #666; }
+      .content .new p a {
+        transition: 1s; }
+      .content .new p i {
+        transition: 1s; }
+      .content .new p:hover a {
+        color: #f00; }
+      .content .new p:hover i {
+        color: #f00; } }
+
+@media screen and (max-width: 767px) {
+  .main_content ul li {
+    justify-content: center; }
+    .main_content ul li dl span {
+      width: 300px; } }
+
+@media screen and (max-width: 750px) {
+  .margin {
+    width: auto; } }
