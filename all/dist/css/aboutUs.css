@@ -1,0 +1,124 @@
+.margin {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box; }
+
+.banner {
+  display: flex;
+  justify-content: center;
+  max-height: 341px;
+  height: 341px; }
+  .banner img {
+    justify-content: center;
+    width: 100%; }
+
+.title .cont {
+  display: flex;
+  margin-top: 70px;
+  align-items: center; }
+  .title .cont .left {
+    border-bottom: 1px solid #666;
+    width: 33%; }
+  .title .cont .center {
+    text-align: center;
+    width: 33%; }
+    .title .cont .center span {
+      font: 700 40px/60px "";
+      color: #f00; }
+    .title .cont .center i {
+      font: 700 12px "";
+      color: #999;
+      letter-spacing: 3px; }
+  .title .cont .right {
+    border-bottom: 1px solid #666;
+    width: 33%; }
+
+.company {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  width: 100%; }
+  .company .left {
+    width: 180%;
+    margin: 15px; }
+  .company img {
+    width: 100%; }
+  .company .right {
+    margin-top: 20px; }
+    .company .right p {
+      font: 14px/25px "";
+      color: #000; }
+
+.main_content {
+  text-align: center; }
+  .main_content ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; }
+    .main_content ul li {
+      flex: 1;
+      margin-left: 15px; }
+      .main_content ul li:nth-child(1) {
+        margin-left: 0; }
+      .main_content ul li dl dt img {
+        border-radius: 20% 50%;
+        vertical-align: middle;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        transition: 1s; }
+        .main_content ul li dl dt img:hover {
+          transform: skew(-15deg); }
+      .main_content ul li dl dd {
+        font: 16px "";
+        color: #f00;
+        padding: 10px 0; }
+      .main_content ul li dl span {
+        font: 14px/20px "";
+        color: #666; }
+
+@media screen and (max-width: 1200px) {
+  .margin {
+    width: 970px; } }
+
+@media screen and (max-width: 991px) {
+  .title .cont {
+    margin: 70px auto 0;
+    display: block; }
+    .title .cont .left {
+      border-bottom: 1px solid #666;
+      width: 100%; }
+    .title .cont .center {
+      text-align: center;
+      width: 100%; }
+      .title .cont .center span {
+        font: 700 40px/60px "";
+        color: #f00; }
+      .title .cont .center i {
+        font: 700 12px "";
+        color: #999;
+        letter-spacing: 3px; }
+    .title .cont .right {
+      border-bottom: 1px solid #666;
+      width: 100%; }
+  .company {
+    display: block; }
+    .company .left {
+      width: 100%;
+      margin: auto; }
+    .company .right {
+      padding: 0 25px; } }
+
+@media screen and (max-width: 767px) {
+  .main_content ul li {
+    justify-content: center; }
+    .main_content ul li dl span {
+      width: 300px;
+      padding: 50x 0; } }
+
+@media screen and (max-width: 750px) {
+  .margin {
+    width: auto; } }

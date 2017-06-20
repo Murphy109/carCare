@@ -1,0 +1,199 @@
+@charset "utf-8";
+.margin{width:1120px;margin:0 auto; padding:0 40px; box-sizing:border-box; }
+
+.banner{
+    display: flex;
+    justify-content: center; 
+   max-height: 341px;
+   height:341px;
+    img{
+        justify-content: center; 
+    width:100%;
+    }
+}
+.title{
+    .cont{display: flex;
+    margin-top:70px;
+    align-items: center;
+        .left{
+            border-bottom: 1px solid #666;
+            width:33%;
+        }
+        .center{
+            text-align: center;
+            width:33%;
+            span{
+                font:700 40px/60px "";
+                
+                color:#f00;
+            }
+            i{
+                font:700 12px "";
+                color:#999;
+                letter-spacing: 3px;
+            }
+        }
+        .right{
+            border-bottom: 1px solid #666;
+            width:33%;
+        }
+    }
+}
+.company{margin:20px 0;
+        display: flex;
+        align-items: center;
+        width:100%;
+        .left{
+            width: 180%;
+            margin:15px;
+            }
+            img{
+            width: 100%;
+        }
+        .right{
+            margin-top:20px;
+            p{
+                font:14px/25px "";color:#000;
+            }
+        }
+    }
+.form form {
+  width:40%;
+  margin: auto;
+  p{  font:12px/30px "";
+        display: flex;
+        margin:15px 0;  
+      width:100%;
+      input{
+          width:50%;
+      }
+      &:nth-of-type(4){
+          align-items: center;
+          input{
+              width:10%;
+          }
+      }
+      &:nth-of-type(8){
+          #btn{
+              font:12px/30px "";
+          padding:0 15px;
+          background: #f00;
+          color:#fff;
+          border:0;
+          width:20%;
+          img{
+              margin:0 3px;
+          }
+          }
+          
+      }
+      textarea{
+          width:50%;
+          height:50px;
+      }
+      
+  }
+  #showCode{
+          margin:17%;
+      }
+   }
+//响应式
+@media screen and (max-width:1200px){
+.margin{ width:970px;}
+}
+@media screen and (max-width:991px){
+    .title{
+        .cont{margin:70px auto 0;
+            display: block;
+            .left{
+                border-bottom: 1px solid #666;
+                width:100%;
+            }
+            .center{
+                text-align: center;
+                width:100%;
+                span{
+                    font:700 40px/60px "";
+                    
+                    color:#f00;
+                }
+                i{
+                    font:700 12px "";
+                    color:#999;
+                    letter-spacing: 3px;
+                }
+            }
+            .right{
+                border-bottom: 1px solid #666;
+                width:100%;
+            }
+        
+        }
+    }
+    .company{
+        display: block;
+        .left{
+            width:100%;
+            margin:auto;
+            }
+        .right{
+            padding:0 25px; 
+            }
+        
+        }
+    .form form {
+          width:250px;
+          margin: auto;
+          p{  font:12px/30px "";
+                display: flex;
+                margin:15px 0;  
+              width:100%;
+              input{
+                  width:50%;
+              }
+              &:nth-of-type(4){
+                  align-items: center;
+                  input{
+                      width:10%;
+                  }
+              }
+              &:nth-of-type(8){
+                  #btn{
+                      font:12px/30px "";
+                  padding:0 15px;
+                  background: #f00;
+                  color:#fff;
+                  border:0;
+                  width:80px;
+                  img{
+                      margin:0 3px;
+                  }
+                  }
+                  
+              }
+              textarea{
+                  width:50%;
+                  height:50px;
+              }
+      
+        }
+    }
+}
+@media screen and (max-width:767px){
+
+.main_content ul li{
+    justify-content: center;
+    dl{
+        span{
+            width:300px;
+            padding:50x 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:750px){
+.margin{width:auto;}
+}
+
+
+
